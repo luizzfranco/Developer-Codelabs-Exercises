@@ -8,13 +8,23 @@
     tools:context=".MainActivity"
     android:layout_gravity="center_vertical">
 
-    <TextView
-        android:id="@+id/tv"
+    <ImageView
+        android:id="@+id/dice_image"
+        app:srcCompat="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_label"
         android:layout_gravity="center_horizontal"
-        android:textSize="30sp"/>
+        android:src="@drawable/empty_dice"
+        tools:src="@drawable/empty_dice"/>
+
+    <ImageView
+        android:id="@+id/dice_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/empty_dice"
+        app:srcCompat="@+id/dice_image"
+        tools:src="@drawable/empty_dice" />
 
     <Button
         android:id="@+id/btn"
@@ -24,12 +34,5 @@
         android:text="@string/roll_label"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/btnUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/count"
-        android:textSize="18sp"/>
 
 </LinearLayout>
